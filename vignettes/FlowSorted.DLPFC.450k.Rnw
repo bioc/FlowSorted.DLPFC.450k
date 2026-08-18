@@ -48,6 +48,18 @@ directly integrated with the \Rpackage{minfi} Bioconductor package to estimate c
 in users' frontal cortex Illumina 450k samples using a modified version of the algorithm described
 in Houseman et al. 2012 \cite{houseman2012} and Guintivano et al 2013 \cite{guintivano2013}.
 
+\section{Usage}
+
+As of package version 1.49.2, the data object in this package is no longer bundled directly
+with the package due to its size. Instead, it is hosted on Zenodo
+(\url{https://doi.org/10.5281/zenodo.21998569}) and downloaded on first use via
+\Rpackage{BiocFileCache}, which caches it locally so subsequent calls do not re-download:
+
+<<usage, eval=FALSE>>=
+library(FlowSorted.DLPFC.450k)
+rgset <- FlowSorted.DLPFC.450k()
+@
+
 \bibliographystyle{unsrturl}
 \bibliography{FlowSorted.DLPFC.450k}
 \end{document}

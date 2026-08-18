@@ -1,13 +1,14 @@
 \name{FlowSorted.DLPFC.450k}
 \alias{FlowSorted.DLPFC.450k}
-\docType{data}
 \title{
   Illumina Human Methylation data from 450k on sorted frontal cortex
   cell populations
 }
 \description{
-  This \code{RGChannelSet} contains Illumina 450k DNA methylation
-  measurements  on 58 flow-sorted dorsolateral prefrontal cortex samples
+  This function downloads (once; cached locally afterwards via
+  \link[BiocFileCache:BiocFileCache-class]{BiocFileCache}) and returns
+  an \code{RGChannelSet} containing Illumina 450k DNA methylation
+  measurements on 58 flow-sorted dorsolateral prefrontal cortex samples
   from non-psychiatric controls from Guintivano et al. 2013. These
   samples were separated into neuronal (NeuN+) and non-neuronal (NeuN-)
   cell types. These data can be used by the \link{minfi} package to
@@ -15,20 +16,24 @@
   data may also be useful to individuals as example Illumina 450k data
   for trying preprocessing methods across a variety of Bioconductor
   packages.
+
+  As of package version 1.49.2, this data is no longer bundled directly
+  with the package; it is hosted on Zenodo (\doi{10.5281/zenodo.21998569})
+  and downloaded on first use.
 }
 
 \usage{
-data(FlowSorted.DLPFC.450k)
+FlowSorted.DLPFC.450k()
 }
 
 \details{
-  The \code{FlowSorted.DLPFC.450k} objects is based an samples assayed
+  The \code{FlowSorted.DLPFC.450k} object is based on samples assayed
   as part of Guintivano et al (2013).  Please cite this paper, if the
   data is used.  If you're using this data together with the
   \link{minfi} package, please see the package vignette for details on
   how to cite that package.
 }
-\format{
+\value{
   An object of class \code{RGChannelSet}.
 }
 \references{
@@ -41,6 +46,8 @@ data(FlowSorted.DLPFC.450k)
 }
 
 \examples{
-   data(FlowSorted.DLPFC.450k)
+\donttest{
+rgset <- FlowSorted.DLPFC.450k()
+}
 }
 \keyword{datasets}

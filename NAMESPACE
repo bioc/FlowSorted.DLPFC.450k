@@ -1,1 +1,4 @@
 import(minfi)
+importFrom(BiocFileCache, BiocFileCache, bfcrpath, bfcquery, bfcremove)
+importFrom(tools, R_user_dir, md5sum)
+export(FlowSorted.DLPFC.450k)

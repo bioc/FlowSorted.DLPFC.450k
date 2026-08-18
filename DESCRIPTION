@@ -1,12 +1,18 @@
 Package: FlowSorted.DLPFC.450k
-Version: 1.49.1
-Title: Illumina HumanMethylation data on sorted frontal cortex cell
-        populations
-Description: Raw data objects for the Illumina 450k DNA methylation
-        microarrays.
-Author: Andrew E Jaffe, Zachary A. Kaminsky
-Maintainer: Andrew E Jaffe <andrewejaffe@gmail.com>
+Version: 1.49.2
+Title: Illumina HumanMethylation Data on Sorted Frontal Cortex Cell
+        Populations
+Description: Provides a function to download (and cache locally via
+        BiocFileCache) a data object for the Illumina 450k DNA
+        methylation microarrays. The underlying data is hosted on Zenodo.
+Authors@R: c(person(given = c("Andrew", "E"),
+                     family = "Jaffe",
+                     role = c("aut", "cre"),
+                     email = "andrewejaffe@gmail.com"),
+             person(given = c("Zachary", "A."),
+                     family = "Kaminsky",
+                     role = "aut"))
 License: Artistic-2.0
-Depends: R (>= 2.13.0), minfi (>= 1.21.2)
-LazyData: yes
+Depends: R (>= 4.0.0), minfi (>= 1.21.2)
+Imports: BiocFileCache, tools
 biocViews: ExperimentData, Homo_sapiens_Data, Tissue, MicroarrayData, TissueMicroarrayData, MethylationArrayData
