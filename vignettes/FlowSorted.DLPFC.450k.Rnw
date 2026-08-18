@@ -57,7 +57,7 @@ with the package due to its size. Instead, it is hosted on Zenodo
 
 <<usage, eval=FALSE>>=
 library(FlowSorted.DLPFC.450k)
-rgset <- FlowSorted.DLPFC.450k()
+rgset <- FlowSorted.DLPFC.450k
 @
 
 \bibliographystyle{unsrturl}

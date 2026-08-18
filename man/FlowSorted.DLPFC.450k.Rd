@@ -23,7 +23,7 @@
 }
 
 \usage{
-FlowSorted.DLPFC.450k()
+FlowSorted.DLPFC.450k
 }
 
 \details{
@@ -47,7 +47,8 @@ FlowSorted.DLPFC.450k()
 
 \examples{
 \donttest{
-rgset <- FlowSorted.DLPFC.450k()
+library(FlowSorted.DLPFC.450k)
+rgset <- FlowSorted.DLPFC.450k
 }
 }
 \keyword{datasets}
