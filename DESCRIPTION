@@ -1,5 +1,5 @@
 Package: FlowSorted.DLPFC.450k
-Version: 1.50.0
+Version: 1.51.0
 Title: Illumina HumanMethylation Data on Sorted Frontal Cortex Cell
         Populations
 Description: Provides a function to download (and cache locally via
